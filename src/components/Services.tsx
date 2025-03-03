@@ -46,7 +46,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="services" className="full-height-section bg-[#161c26]">
+    <section id="services" className="full-height-section bg-[#0e1218]">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold text-white">My Expertise</h2>
@@ -59,7 +59,7 @@ const Services = () => {
           {services.map((service, index) => (
             <div 
               key={index} 
-              className="bg-[#0e1218] rounded-lg p-8 transition-all duration-300 hover:shadow-lg hover:shadow-[#00c8ff]/10 hover:transform hover:-translate-y-1 border border-gray-800"
+              className="bg-[#161c26] rounded-lg p-8 transition-all duration-300 hover:shadow-lg hover:shadow-[#00c8ff]/10 hover:transform hover:-translate-y-1 border border-gray-800"
             >
               <div className="mb-4">
                 {service.icon}

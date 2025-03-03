@@ -22,8 +22,8 @@ const Contact = () => {
                 <div>
                   <h4 className="font-medium text-white">Email</h4>
                   <p className="text-gray-400">
-                    <a href="mailto:baxterpearson@gmail.com" className="hover:text-[#00c8ff] transition duration-300">
-                      baxterpearson@gmail.com
+                    <a href="mailto:baxterrpearson@gmail.com" className="hover:text-[#00c8ff] transition duration-300">
+                      baxterrpearson@gmail.com
                     </a>
                   </p>
                 </div>
@@ -33,7 +33,7 @@ const Contact = () => {
                 <Phone className="h-6 w-6 text-[#00c8ff] mt-1 mr-4" />
                 <div>
                   <h4 className="font-medium text-white">Phone</h4>
-                  <p className="text-gray-400">(07800) 533584</p>
+                  <p className="text-gray-400">+447800533584</p>
                 </div>
               </div>
               

@@ -66,6 +66,9 @@ const Navbar = () => {
             <a href="#" className="nav-item text-gray-300 hover:text-[#00c8ff] font-medium" onClick={(e) => scrollToSection(e, null)}>
               Home
             </a>
+            <a href="#about" className="nav-item text-gray-300 hover:text-[#00c8ff] font-medium" onClick={(e) => scrollToSection(e, 'about')}>
+              About
+            </a>
             <a href="#services" className="nav-item text-gray-300 hover:text-[#00c8ff] font-medium" onClick={(e) => scrollToSection(e, 'services')}>
               My Expertise
             </a>
@@ -103,6 +106,13 @@ const Navbar = () => {
                 onClick={(e) => scrollToSection(e, null)}
               >
                 Home
+              </a>
+              <a 
+                href="#about" 
+                className="text-gray-300 hover:text-[#00c8ff] font-medium"
+                onClick={(e) => scrollToSection(e, 'about')}
+              >
+                About
               </a>
               <a 
                 href="#services" 

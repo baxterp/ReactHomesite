@@ -9,9 +9,10 @@ const publishedWorks = [
     image: 'https://images.unsplash.com/photo-1547082299-de196ea013d6?q=80&w=500&auto=format&fit=crop',
     tags: ['ASP.NET Core', 'OpenAI API', 'ChatGPT'],
     technology: 'ASP.NET Core MVC 8.0',
-    liveLink: '#',
-    githubLink: '#',
-    linkText: 'Live Demo'
+    liveLink: 'https://openai.baxterpearson.co.uk/',
+    githubLink: 'https://github.com/baxterp/OpenAI.ChatGPT.Examples.Web',
+    linkText: 'Live Demo',
+    externalLink: true
   },
   {
     title: 'Stockfish .NET Chess Demo Site',
@@ -19,9 +20,10 @@ const publishedWorks = [
     image: 'https://images.unsplash.com/photo-1586165368502-1bad197a6461?q=80&w=500&auto=format&fit=crop',
     tags: ['ASP.NET Core', 'MVC', 'Chess Engine'],
     technology: 'ASP.NET Core MVC 8.0',
-    liveLink: '#',
-    githubLink: '#',
-    linkText: 'Live Demo'
+    liveLink: 'https://chess.baxterpearson.co.uk/',
+    githubLink: 'https://github.com/baxterp/Chess.Stockfish.Web',
+    linkText: 'Live Demo',
+    externalLink: true
   },
   {
     title: 'This web site',
@@ -30,7 +32,7 @@ const publishedWorks = [
     tags: ['React', 'Tailwind CSS', 'Vite'],
     technology: '',
     liveLink: null,
-    githubLink: '#',
+    githubLink: 'https://github.com/baxterp/ReactHomesite',
     linkText: null
   },
   {
@@ -40,7 +42,7 @@ const publishedWorks = [
     tags: ['API', 'F1', 'News'],
     technology: 'ASP.NET Core 8.0 WebAPI',
     liveLink: 'https://rssapi.baxterpearson.co.uk/api/news/f1news',
-    githubLink: '#',
+    githubLink: 'https://github.com/baxterp/API.NewsFeed',
     linkText: 'Results',
     apiUrl: 'https://rssapi.baxterpearson.co.uk/api/news/f1news'
   },
@@ -51,7 +53,7 @@ const publishedWorks = [
     tags: ['API', 'MotoGP', 'News'],
     technology: 'ASP.NET Core 8.0 WebAPI',
     liveLink: 'https://rssapi.baxterpearson.co.uk/api/news/motogpnews',
-    githubLink: '#',
+    githubLink: 'https://github.com/baxterp/API.NewsFeed',
     linkText: 'Results',
     apiUrl: 'https://rssapi.baxterpearson.co.uk/api/news/motogpnews'
   },
@@ -62,7 +64,7 @@ const publishedWorks = [
     tags: ['API', 'Cryptocurrency', 'News'],
     technology: 'ASP.NET Core 8.0 WebAPI',
     liveLink: 'https://rssapi.baxterpearson.co.uk/api/news/cryptonews',
-    githubLink: '#',
+    githubLink: 'https://github.com/baxterp/API.NewsFeed',
     linkText: 'Results',
     apiUrl: 'https://rssapi.baxterpearson.co.uk/api/news/cryptonews'
   },
@@ -73,7 +75,7 @@ const publishedWorks = [
     technology: 'ASP.NET Core 8.0 WebAPI',
     tags: ['API', 'Translator', 'Language'],
     liveLink: 'https://rapidapi.com/baxterrpearson/api/universal-translator/playground/apiendpoint_a6d2e7eb-ca97-424b-9275-6a2eb8bc5cf4',
-    githubLink: '#',
+    githubLink: 'https://github.com/baxterp/API.NewsFeed',
     linkText: 'Use Translator',
     externalLink: true
   },
@@ -84,7 +86,7 @@ const publishedWorks = [
     tags: ['Security', 'Messaging', 'Encryption'],
     technology: 'WPF .NET 4.8',
     liveLink: null,
-    githubLink: '#'
+    githubLink: 'https://github.com/baxterp/Secure.Messenger'
   },
   {
     title: 'Dependency Injection Demo published on Github',
@@ -93,7 +95,7 @@ const publishedWorks = [
     tags: ['Dependency Injection', 'Architecture', 'Design Patterns'],
     technology: 'WPF .NET 4.8',
     liveLink: null,
-    githubLink: '#'
+    githubLink: 'https://github.com/baxterp/Dependency.Injection.Demo'
   },
   {
     title: 'Winforms Plugins Architecture Demo published on Github',
@@ -102,7 +104,7 @@ const publishedWorks = [
     tags: ['Plugins', 'Architecture', 'Winforms'],
     technology: 'WPF .NET 4.8',
     liveLink: null,
-    githubLink: '#'
+    githubLink: 'https://github.com/baxterp/Winforms.Plugins'
   }
 ];
 
@@ -129,17 +131,13 @@ const PublishedWork = () => {
     }
   };
 
-  const openImageInNewTab = (imageUrl) => {
-    window.open(imageUrl, '_blank', 'noopener,noreferrer');
-  };
-
   const openGithubLink = (e, url) => {
     e.preventDefault();
     window.open(url, '_blank', 'noopener,noreferrer');
   };
 
   return (
-    <section id="published-work" className="full-height-section bg-[#0e1218]">
+    <section id="published-work" className="full-height-section bg-[#161c26]">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold text-white">Published Work and Demos</h2>
@@ -152,13 +150,9 @@ const PublishedWork = () => {
           {publishedWorks.map((work, index) => (
             <div 
               key={index} 
-              className="bg-[#161c26] rounded-lg overflow-hidden shadow-md transition-all duration-300 hover:shadow-xl hover:shadow-[#00c8ff]/10 border border-gray-800 h-full flex flex-col"
+              className="bg-[#0e1218] rounded-lg overflow-hidden shadow-md transition-all duration-300 hover:shadow-xl hover:shadow-[#00c8ff]/10 border border-gray-800 h-full flex flex-col"
             >
-              <div 
-                className="h-48 overflow-hidden cursor-pointer" 
-                onClick={() => openImageInNewTab(work.image)}
-                title="Click to view full image"
-              >
+              <div className="h-48 overflow-hidden">
                 <img 
                   src={work.image} 
                   alt={work.title} 
@@ -177,7 +171,7 @@ const PublishedWork = () => {
                   {work.tags.map((tag, tagIndex) => (
                     <span 
                       key={tagIndex} 
-                      className="bg-[#0e1218] text-[#00c8ff] text-xs font-medium px-2.5 py-0.5 rounded border border-[#00c8ff]/30"
+                      className="bg-[#161c26] text-[#00c8ff] text-xs font-medium px-2.5 py-0.5 rounded border border-[#00c8ff]/30"
                     >
                       {tag}
                     </span>

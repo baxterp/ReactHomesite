@@ -52,13 +52,13 @@ const Hero = () => {
           
           {/* Contact Information */}
           <div className={`flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-8 mb-12 transition-all duration-1000 delay-500 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-            <a href="tel:07800533584" className="flex items-center text-white hover:text-[#00c8ff] transition duration-300">
+            <a href="tel:+447800533584" className="flex items-center text-white hover:text-[#00c8ff] transition duration-300">
               <Phone className="mr-2" size={20} />
-              <span>(07800) 533584</span>
+              <span>+447800533584</span>
             </a>
-            <a href="mailto:baxterpearson@gmail.com" className="flex items-center text-white hover:text-[#00c8ff] transition duration-300">
+            <a href="mailto:baxterrpearson@gmail.com" className="flex items-center text-white hover:text-[#00c8ff] transition duration-300">
               <Mail className="mr-2" size={20} />
-              <span>baxterpearson@gmail.com</span>
+              <span>baxterrpearson@gmail.com</span>
             </a>
           </div>
         </div>

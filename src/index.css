@@ -89,12 +89,28 @@ body {
   opacity: 1;
 }
 
+/* Section title glow effect */
+section h2 {
+  animation: glowText 3s ease-in-out infinite;
+}
+
 /* Full height section styles */
 .full-height-section {
-  min-height: 100vh;
+  /* Mobile styles - content-based height with padding */
+  min-height: auto;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   display: flex;
   flex-direction: column;
-  padding-top: 80px; /* Add padding to account for fixed navbar */
+}
+
+/* Desktop styles - 100% height */
+@media (min-width: 768px) {
+  .full-height-section {
+    min-height: 100vh;
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
 }
 
 /* Section background styles */
@@ -121,24 +137,29 @@ section:nth-of-type(1)::before {
   background-image: url('/images/hero-bg.jpg');
 }
 
-/* Services section background */
+/* About section background */
 section:nth-of-type(2)::before {
   background-image: url('/images/services-bg.jpg');
 }
 
-/* Published Work section background */
+/* Services section background */
 section:nth-of-type(3)::before {
-  background-image: url('/images/projects-bg.jpg');
+  background-image: url('/images/hero-bg.jpg');
 }
 
-/* Testimonials section background */
+/* Published Work section background */
 section:nth-of-type(4)::before {
   background-image: url('/images/testimonials-bg.jpg');
 }
 
-/* Location section background */
+/* Testimonials section background */
 section:nth-of-type(5)::before {
   background-image: url('/images/location-bg.jpg');
+}
+
+/* Location section background */
+section:nth-of-type(6)::before {
+  background-image: url('/images/testimonials-bg.jpg');
 }
 
 /* Ensure content is above the background */
@@ -173,4 +194,9 @@ section > div {
   content: '"';
   right: -1.5rem;
   bottom: -2rem;
+}
+
+/* Custom blend mode for map overlay */
+.mix-blend-mode-multiply {
+  mix-blend-mode: multiply;
 }
