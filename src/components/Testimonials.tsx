@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const testimonials = [
@@ -97,7 +97,7 @@ const Testimonials = () => {
                   <div key={index} className="w-full flex-shrink-0 px-4">
                     <div className="bg-[#161c26] rounded-lg p-7 shadow-md border border-gray-800 min-h-[242px] flex flex-col">
                       <p className="text-gray-300 italic mb-5 text-xl leading-relaxed flex-grow">"{testimonial.quote}"</p>
-                      <div className="mt-auto">
+                      <div className="mt-auto" style={{ paddingTop: '40px' }}>
                         <h4 className="font-bold text-white text-lg">{testimonial.name}</h4>
                         <p className="text-gray-400">{testimonial.role}</p>
                       </div>

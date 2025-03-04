@@ -1,5 +1,4 @@
-import React from 'react';
-import { Database, Code, Server, Layout, Table, FileCode } from 'lucide-react';
+import { Database, Code, Layout, Table, FileCode } from 'lucide-react';
 
 const services = [
   {

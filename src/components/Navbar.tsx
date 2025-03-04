@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,7 +17,7 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const scrollToSection = (e, sectionId) => {
+  const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string | null) => {
     e.preventDefault();
     
     // Close mobile menu if open
@@ -39,17 +39,20 @@ const Navbar = () => {
     
     if (section) {
       // Get the navbar height to offset the scroll position
-      const navbarHeight = document.querySelector('nav').offsetHeight;
+      const navbar = document.querySelector('nav');
+      if (navbar) {
+        const navbarHeight = navbar.offsetHeight;
       
-      // Calculate the position to scroll to
-      const sectionPosition = section.offsetTop;
-      const offsetPosition = sectionPosition - navbarHeight;
+        // Calculate the position to scroll to
+        const sectionPosition = section.offsetTop;
+        const offsetPosition = sectionPosition - navbarHeight;
       
-      // Scroll to the section
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
+        // Scroll to the section
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
     }
   };
 

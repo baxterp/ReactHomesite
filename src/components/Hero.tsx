@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { Github, Linkedin, Twitter, Mail, Phone } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { Github, Linkedin, Mail, Phone } from 'lucide-react';
 
 const Hero = () => {
   const [isLoaded, setIsLoaded] = useState(false);

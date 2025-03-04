@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { ExternalLink, Github } from 'lucide-react';
 import ApiResultModal from './ApiResultModal';
 
@@ -44,7 +44,7 @@ const publishedWorks = [
     liveLink: 'https://rssapi.baxterpearson.co.uk/api/news/f1news',
     githubLink: 'https://github.com/baxterp/API.NewsFeed',
     linkText: 'Results',
-    apiUrl: 'https://rssapi.baxterpearson.co.uk/api/news/f1news'
+    apiUrl: 'https://rssapi.baxterpearson.co.uk/api/news/f1news/20/20'
   },
   {
     title: 'Public MotoGP News API published on RapidAPI.com',
@@ -55,7 +55,7 @@ const publishedWorks = [
     liveLink: 'https://rssapi.baxterpearson.co.uk/api/news/motogpnews',
     githubLink: 'https://github.com/baxterp/API.NewsFeed',
     linkText: 'Results',
-    apiUrl: 'https://rssapi.baxterpearson.co.uk/api/news/motogpnews'
+    apiUrl: 'https://rssapi.baxterpearson.co.uk/api/news/motogpnews/20/20'
   },
   {
     title: 'Public Cryptocurrency News API published on RapidAPI.com',
@@ -63,7 +63,7 @@ const publishedWorks = [
     image: 'https://images.unsplash.com/photo-1621761191319-c6fb62004040?q=80&w=500&auto=format&fit=crop',
     tags: ['API', 'Cryptocurrency', 'News'],
     technology: 'ASP.NET Core 8.0 WebAPI',
-    liveLink: 'https://rssapi.baxterpearson.co.uk/api/news/cryptonews',
+    liveLink: 'https://rssapi.baxterpearson.co.uk/api/news/cryptonews/20/20',
     githubLink: 'https://github.com/baxterp/API.NewsFeed',
     linkText: 'Results',
     apiUrl: 'https://rssapi.baxterpearson.co.uk/api/news/cryptonews'
@@ -113,7 +113,7 @@ const PublishedWork = () => {
   const [currentApiUrl, setCurrentApiUrl] = useState('');
   const [currentApiTitle, setCurrentApiTitle] = useState('');
 
-  const handleResultsClick = (e, work) => {
+  const handleResultsClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, work: typeof publishedWorks[0]) => {
     e.preventDefault();
     if (work.externalLink) {
       // For external links like RapidAPI playground, open in a new tab
@@ -131,7 +131,7 @@ const PublishedWork = () => {
     }
   };
 
-  const openGithubLink = (e, url) => {
+  const openGithubLink = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, url: string) => {
     e.preventDefault();
     window.open(url, '_blank', 'noopener,noreferrer');
   };

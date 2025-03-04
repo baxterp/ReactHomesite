@@ -9,7 +9,7 @@ interface ApiResultModalProps {
 }
 
 interface CollapsibleJsonProps {
-  data: any;
+  data: Record<string, any> | any[];
   level?: number;
   isLast?: boolean;
   path?: string;
@@ -136,7 +136,7 @@ const CollapsibleJson: React.FC<CollapsibleJsonProps> = ({
               {isArray ? (
                 <div className="flex-1">
                   <CollapsibleJson 
-                    data={data[key]} 
+                    data={(data as any[])[Number(key)]} 
                     level={level + 1} 
                     isLast={index === keys.length - 1}
                     path={`${path}.${key}`}
@@ -147,7 +147,7 @@ const CollapsibleJson: React.FC<CollapsibleJsonProps> = ({
                 <div className="flex-1">
                   <span className="text-yellow-300 mr-1">"{key}":</span>
                   <CollapsibleJson 
-                    data={data[key]} 
+                    data={(data as Record<string, any>)[key]} 
                     level={level + 1} 
                     isLast={index === keys.length - 1}
                     path={`${path}.${key}`}

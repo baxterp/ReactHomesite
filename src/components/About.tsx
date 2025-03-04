@@ -1,6 +1,3 @@
-import React from 'react';
-import { Code, Database, Server } from 'lucide-react';
-
 const About = () => {
   return (
     <section id="about" className="full-height-section bg-[#161c26]">
