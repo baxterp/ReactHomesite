@@ -28,7 +28,7 @@ const publishedWorks = [
   {
     title: 'This web site',
     description: 'This website built by me using React JS, and Tailwind CSS with smooth animations and section transitions',
-    image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=500&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=500&auto=format&fit=crop',
     tags: ['React', 'Tailwind CSS', 'Vite'],
     technology: '',
     liveLink: null,

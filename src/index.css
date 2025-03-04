@@ -96,21 +96,23 @@ section h2 {
 
 /* Full height section styles */
 .full-height-section {
-  /* Mobile styles - content-based height with padding */
+  /* Content-based height with padding for all sections */
   min-height: auto;
-  padding-top: 5rem;
+  padding-top: 4.25rem; /* Standard padding for all sections (same as About) */
   padding-bottom: 5rem;
   display: flex;
   flex-direction: column;
 }
 
-/* Desktop styles - 100% height */
-@media (min-width: 768px) {
-  .full-height-section {
-    min-height: 100vh;
-    padding-top: 48px;
-    padding-bottom: 48px;
-  }
+/* Keep hero section full height and original padding */
+section:nth-of-type(1).full-height-section {
+  min-height: 100vh;
+  padding-top: 5rem; /* Keep original padding for hero */
+}
+
+/* Location section specific padding */
+#location.full-height-section {
+  padding-bottom: 2.5rem; /* 50% of the original 5rem padding */
 }
 
 /* Section background styles */
