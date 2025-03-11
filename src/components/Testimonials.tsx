@@ -11,11 +11,6 @@ const testimonials = [
     name: 'Kenneth Kiiza',
     role: 'Developer',
     quote: 'Great person to work with. Very precise and quite helpful in the Mercato Development. We bounce ideas off each other. Pleasure to work with.'
-  },
-  {
-    name: 'Sarah Johnson',
-    role: 'Project Manager, TechSolutions Ltd',
-    quote: 'Baxter consistently delivered high-quality code and innovative solutions to complex problems. His expertise in Microsoft technologies was invaluable to our project success. I would highly recommend him for any software development role.'
   }
 ];
 

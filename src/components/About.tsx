@@ -10,15 +10,15 @@ const About = () => {
           <div className="bg-[#0e1218] rounded-lg shadow-md border border-gray-800 relative overflow-hidden">
             <div className="relative z-10 w-full p-8">
               <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                I have been a commercial software developer since year 2000. I have experience with many software, and web platforms, encompassing the latest industry trends.
+                I have been a commercial software developer since year 2000. I have experience with many software, and web platforms, encompassing the latest industry trends. 
               </p>
               
               <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                I pride myself on producing software to the highest standards. For examples of my work and services offered please see below.
+                I pride myself on producing software to the highest standards. For examples of my Published Work and Expertise offered please see below.
               </p>
               
               <p className="text-gray-300 text-lg leading-relaxed mb-0">
-                I will undertake new projects, and project upgrades.
+                I will be happy to discuss any project requirements you may have, please feel free to contact me.
               </p>
             </div>
           </div>

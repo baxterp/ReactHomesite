@@ -14,12 +14,12 @@ const services = [
   {
     icon: <Code className="h-10 w-10 text-[#00c8ff]" />,
     title: 'Javascript',
-    description: 'Experienced since 2008 creating and updating Javascript for website use.'
+    description: 'Experienced since 2008 creating and updating Javascript for website use. I have used most of the poplular Javascript libraries and frameworks.'
   },
   {
     icon: <Database className="h-10 w-10 text-[#00c8ff]" />,
     title: 'SQL Server',
-    description: 'Experience with all versions of Microsoft SQL Server since 2000 release.'
+    description: 'Experience with many versions of Microsoft SQL Server. I have also been required to design and update SQL Server databases.'
   },
   {
     icon: <FileCode className="h-10 w-10 text-[#00c8ff]" />,
