@@ -136,7 +136,8 @@ const CollapsibleJson: React.FC<CollapsibleJsonProps> = ({
               {isArray ? (
                 <div className="flex-1">
                   <CollapsibleJson 
-                    data={(data as any[])[Number(key)]} 
+
+                    data={data[key]} 
                     level={level + 1} 
                     isLast={index === keys.length - 1}
                     path={`${path}.${key}`}
@@ -147,7 +148,7 @@ const CollapsibleJson: React.FC<CollapsibleJsonProps> = ({
                 <div className="flex-1">
                   <span className="text-yellow-300 mr-1">"{key}":</span>
                   <CollapsibleJson 
-                    data={(data as Record<string, any>)[key]} 
+                    data={data[key]} 
                     level={level + 1} 
                     isLast={index === keys.length - 1}
                     path={`${path}.${key}`}

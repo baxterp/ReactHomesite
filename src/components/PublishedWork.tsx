@@ -44,7 +44,7 @@ const publishedWorks = [
     liveLink: 'https://rssapi.baxterpearson.co.uk/api/news/f1news',
     githubLink: 'https://github.com/baxterp/API.NewsFeed',
     linkText: 'Results',
-    apiUrl: 'https://rssapi.baxterpearson.co.uk/api/news/f1news/20/20'
+    apiUrl: 'https://rssapi.baxterpearson.co.uk/api/news/f1news'
   },
   {
     title: 'Public MotoGP News API published on RapidAPI.com',
@@ -55,7 +55,7 @@ const publishedWorks = [
     liveLink: 'https://rssapi.baxterpearson.co.uk/api/news/motogpnews',
     githubLink: 'https://github.com/baxterp/API.NewsFeed',
     linkText: 'Results',
-    apiUrl: 'https://rssapi.baxterpearson.co.uk/api/news/motogpnews/20/20'
+    apiUrl: 'https://rssapi.baxterpearson.co.uk/api/news/motogpnews'
   },
   {
     title: 'Public Cryptocurrency News API published on RapidAPI.com',
@@ -63,7 +63,7 @@ const publishedWorks = [
     image: 'https://images.unsplash.com/photo-1621761191319-c6fb62004040?q=80&w=500&auto=format&fit=crop',
     tags: ['API', 'Cryptocurrency', 'News'],
     technology: 'ASP.NET Core 8.0 WebAPI',
-    liveLink: 'https://rssapi.baxterpearson.co.uk/api/news/cryptonews/20/20',
+    liveLink: 'https://rssapi.baxterpearson.co.uk/api/news/cryptonews',
     githubLink: 'https://github.com/baxterp/API.NewsFeed',
     linkText: 'Results',
     apiUrl: 'https://rssapi.baxterpearson.co.uk/api/news/cryptonews'
