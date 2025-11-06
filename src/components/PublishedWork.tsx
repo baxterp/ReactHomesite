@@ -41,10 +41,10 @@ const publishedWorks = [
     image: 'https://images.unsplash.com/photo-1614200179396-2bdb77ebf81b?q=80&w=500&auto=format&fit=crop', 
     tags: ['API', 'F1', 'News'],
     technology: 'ASP.NET Core 8.0 WebAPI',
-    liveLink: 'https://rssapi.baxterpearson.co.uk/api/news/f1news',
+    liveLink: 'https://rssapi.baxterpearson.co.uk/api/cachednews/f1news',
     githubLink: 'https://github.com/baxterp/API.NewsFeed',
     linkText: 'Results',
-    apiUrl: 'https://rssapi.baxterpearson.co.uk/api/news/f1news'
+    apiUrl: 'https://rssapi.baxterpearson.co.uk/api/cachednews/f1news'
   },
   {
     title: 'Public MotoGP News API published on RapidAPI.com',
@@ -52,10 +52,10 @@ const publishedWorks = [
     image: 'https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=500&auto=format&fit=crop',
     tags: ['API', 'MotoGP', 'News'],
     technology: 'ASP.NET Core 8.0 WebAPI',
-    liveLink: 'https://rssapi.baxterpearson.co.uk/api/news/motogpnews',
+    liveLink: 'https://rssapi.baxterpearson.co.uk/api/cachednews/motogpnews',
     githubLink: 'https://github.com/baxterp/API.NewsFeed',
     linkText: 'Results',
-    apiUrl: 'https://rssapi.baxterpearson.co.uk/api/news/motogpnews'
+    apiUrl: 'https://rssapi.baxterpearson.co.uk/api/cachednews/motogpnews'
   },
   {
     title: 'Public Cryptocurrency News API published on RapidAPI.com',
@@ -63,10 +63,10 @@ const publishedWorks = [
     image: 'https://images.unsplash.com/photo-1621761191319-c6fb62004040?q=80&w=500&auto=format&fit=crop',
     tags: ['API', 'Cryptocurrency', 'News'],
     technology: 'ASP.NET Core 8.0 WebAPI',
-    liveLink: 'https://rssapi.baxterpearson.co.uk/api/news/cryptonews',
+    liveLink: 'https://rssapi.baxterpearson.co.uk/api/cachednews/cryptonews',
     githubLink: 'https://github.com/baxterp/API.NewsFeed',
     linkText: 'Results',
-    apiUrl: 'https://rssapi.baxterpearson.co.uk/api/news/cryptonews'
+    apiUrl: 'https://rssapi.baxterpearson.co.uk/api/cachednews/cryptonews'
   },
   {
     title: 'Public Universal Translator API published on RapidAPI.com',
