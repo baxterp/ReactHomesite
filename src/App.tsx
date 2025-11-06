@@ -3,6 +3,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Services from './components/Services';
 import PublishedWork from './components/PublishedWork';
+import WebWidgets from './components/WebWidgets';
 import Testimonials from './components/Testimonials';
 import Location from './components/Location';
 import Footer from './components/Footer';
@@ -15,6 +16,7 @@ function App() {
       <About />
       <Services />
       <PublishedWork />
+      <WebWidgets />
       <Testimonials />
       <Location />
       <Footer />

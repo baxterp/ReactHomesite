@@ -2,7 +2,7 @@ import { MapPin } from 'lucide-react';
 
 const Location = () => {
   return (
-    <section id="location" className="full-height-section bg-[#161c26] flex items-center">
+    <section id="location" className="full-height-section bg-[#0e1218] flex items-center">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-24">
           <h2 className="text-3xl md:text-4xl font-bold text-white">Location</h2>
