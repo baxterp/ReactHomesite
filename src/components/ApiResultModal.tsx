@@ -184,7 +184,7 @@ const ApiResultModal: React.FC<ApiResultModalProps> = ({ isOpen, onClose, apiUrl
       setExpandAll(true); // Always expand all nodes when modal opens
       
       // Use a CORS proxy to avoid cross-origin issues
-      const corsProxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(apiUrl)}`;
+      const corsProxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(apiUrl)}`; // CORS option without a local proxy
       
       fetch(corsProxyUrl)
         .then(response => {
