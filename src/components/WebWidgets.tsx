@@ -9,7 +9,7 @@ const WebWidgets = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 xl:grid-cols-3 md:grid-cols-1 grid-rows-1 place-items-center gap-2 p-8" >
+        <div className="grid grid-cols-1 xl:grid-cols-2 md:grid-cols-1 grid-rows-1 place-items-center gap-2 p-8" >
             <div style={{ textAlign: "center" }}>
                 <div style={{paddingBottom: '20px'}}>F1 News</div>
                 <div>
@@ -28,6 +28,12 @@ const WebWidgets = () => {
                 <div style={{paddingBottom: '20px'}}>Premier League News</div>
                 <div>
                     <iframe scrolling="no" src="https://apitest.baxterpearson.co.uk/Home/PremNewsSmall" className="iframe" />
+                </div>
+            </div>
+            <div style={{ textAlign: "center" }}>
+                <div style={{paddingBottom: '20px'}}>UK News</div>
+                <div>
+                    <iframe scrolling="no" src="https://apitest.baxterpearson.co.uk/Home/UKNewsSmall" className="iframe" />
                 </div>
             </div>
         </div>
