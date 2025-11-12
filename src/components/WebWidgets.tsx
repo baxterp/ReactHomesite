@@ -13,7 +13,7 @@ const WebWidgets = () => {
             <div style={{ textAlign: "center" }}>
                 <div style={{paddingBottom: '20px'}}>F1 News</div>
                 <div>
-                    <iframe scrolling="no" src="https://apitest.baxterpearson.co.uk/Home/F1NewsSmall" className="iframe" />
+                    <iframe scrolling="no" src="https://apitest.baxterpearson.co.uk/Home/F1NewsSmall" className="iframe loading" />
                 </div>
             </div>
             <div  
@@ -21,19 +21,19 @@ const WebWidgets = () => {
               style={{ textAlign: "center"}}>
                 <div style={{paddingBottom: '20px'}}>Cryptocurrency News</div>
                 <div>
-                    <iframe scrolling="no" src="https://apitest.baxterpearson.co.uk/Home/CryptoNewsSmall" className="iframe" />
+                    <iframe scrolling="no" src="https://apitest.baxterpearson.co.uk/Home/CryptoNewsSmall" className="iframe loading"/>
                 </div>
             </div>
             <div style={{ textAlign: "center" }}>
                 <div style={{paddingBottom: '20px'}}>Premier League News</div>
                 <div>
-                    <iframe scrolling="no" src="https://apitest.baxterpearson.co.uk/Home/PremNewsSmall" className="iframe" />
+                    <iframe scrolling="no" src="https://apitest.baxterpearson.co.uk/Home/PremNewsSmall" className="iframe loading" />
                 </div>
             </div>
             <div style={{ textAlign: "center" }}>
                 <div style={{paddingBottom: '20px'}}>UK News</div>
                 <div>
-                    <iframe scrolling="no" src="https://apitest.baxterpearson.co.uk/Home/UKNewsSmall" className="iframe" />
+                    <iframe scrolling="no" src="https://apitest.baxterpearson.co.uk/Home/UKNewsSmall" className="iframe loading" />
                 </div>
             </div>
         </div>

@@ -204,5 +204,15 @@ section > div {
 }
 
 .iframe {
-  margin-top: -8px; margin-left: -8px; width: 400px; height: 260px; border:0px; padding: 0px
+  margin-top: -8px; margin-left: -8px; width: 400px; height: 260px; border: 0px; padding: 0px 
+}
+
+.loading {
+/*
+Source - https://stackoverflow.com/a
+Posted by Ciro Santilli OurBigBook.com, modified by community. See post 'Timeline' for change history
+Retrieved 2025-11-12, License - CC BY-SA 4.0
+*/
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='260px' width='400px'><text x='10' y='155' fill='white' font-size='100' font-family='Verdana'>Loading</text></svg>");
+    z-index: 9999 !important;
 }
