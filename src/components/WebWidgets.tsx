@@ -25,9 +25,9 @@ const WebWidgets = () => {
                 </div>
             </div>
             <div style={{ textAlign: "center" }}>
-                <div style={{paddingBottom: '20px'}}>Premier League News</div>
+                <div style={{paddingBottom: '20px' }}>Technology News</div>
                 <div>
-                    <iframe scrolling="no" src="https://apitest.baxterpearson.co.uk/Home/PremNewsSmall" className="iframe loading" />
+                    <iframe scrolling="no" src="https://apitest.baxterpearson.co.uk/Home/TechNewsSmall" className="iframe loading" />
                 </div>
             </div>
             <div style={{ textAlign: "center" }}>
