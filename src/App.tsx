@@ -7,6 +7,7 @@ import WebWidgets from './components/WebWidgets';
 import Testimonials from './components/Testimonials';
 import Location from './components/Location';
 import Footer from './components/Footer';
+import Demos from './components/Demos';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Services />
       <PublishedWork />
       <WebWidgets />
+      <Demos />
       <Testimonials />
       <Location />
       <Footer />

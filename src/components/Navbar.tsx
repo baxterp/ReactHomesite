@@ -81,6 +81,9 @@ const Navbar = () => {
             <a href="#widgets" className="nav-item text-gray-300 hover:text-[#00c8ff] font-medium" onClick={(e) => scrollToSection(e, 'widgets')}>
               News Widgets
             </a>
+            <a href="#widgets" className="nav-item text-gray-300 hover:text-[#00c8ff] font-medium" onClick={(e) => scrollToSection(e, 'emdemos')}>
+              Working Demos
+            </a>
             <a href="#testimonials" className="nav-item text-gray-300 hover:text-[#00c8ff] font-medium" onClick={(e) => scrollToSection(e, 'testimonials')}>
               Testimonials
             </a>

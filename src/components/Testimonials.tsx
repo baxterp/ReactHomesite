@@ -53,7 +53,7 @@ const Testimonials = () => {
   };
 
   return (
-    <section id="testimonials" className="full-height-section bg-[#161c26] flex flex-col">
+    <section id="testimonials" className="full-height-section bg-[#0e1218] flex flex-col">
       <div className="container mx-auto px-4 md:px-6">
         {/* Title and description at the top of the section */}
         <div className="text-center mb-8">

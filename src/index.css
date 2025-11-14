@@ -216,3 +216,21 @@ Retrieved 2025-11-12, License - CC BY-SA 4.0
     background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='260px' width='400px'><text x='10' y='155' fill='white' font-size='100' font-family='Verdana'>Loading</text></svg>");
     z-index: 9999 !important;
 }
+
+.iframeContainer {
+  border-radius: 20px 20px 20px 20px;
+  border: 1px solid black;
+  position: relative;
+  height: 500px;
+  width: 500px;
+  overflow: hidden;
+}
+
+.iframeContent {
+  border: none;
+  position: absolute;
+  top: -95px;
+  left: 0px;
+  height: 595px;
+  width: 500px;
+}
