@@ -5,11 +5,17 @@ const Demos = () => {
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold text-white">Working Demos</h2>
         </div>
-        <div className="grid grid-cols-1 xl:grid-cols-1 md:grid-cols-1 grid-rows-1 place-items-center gap-2 p-8" >
+        <div className="grid grid-cols-1 xl:grid-cols-2 md:grid-cols-1 grid-rows-1 place-items-center gap-2 p-8" >
             <div style={{ textAlign: "center" }}>
                 <div style={{paddingBottom: '10px', fontSize: '16pt'}}>Natural Language Translator</div>
-                <div className="iframeContainer loading">
-                    <iframe scrolling="no" src="https://openai.baxterpearson.co.uk/NaturalLanguageTranslator" className="iframeContent"/>
+                <div className="iframeContainerLang loadingDemo">
+                    <iframe scrolling="no" src="https://openai.baxterpearson.co.uk/NaturalLanguageTranslator" className="iframeContentLang"/>
+                </div>
+            </div>
+            <div style={{ textAlign: "center" }}>
+                <div style={{paddingBottom: '10px', fontSize: '16pt'}}>Job Cover Letter Creator</div>
+                <div className="iframeContainerJob loadingDemo">
+                    <iframe scrolling="yes" src="https://openai.baxterpearson.co.uk/JobCoverLetter" className="iframeContentJob"/>
                 </div>
             </div>
         </div>

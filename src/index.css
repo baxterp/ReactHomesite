@@ -214,10 +214,22 @@ Posted by Ciro Santilli OurBigBook.com, modified by community. See post 'Timelin
 Retrieved 2025-11-12, License - CC BY-SA 4.0
 */
     background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='260px' width='400px'><text x='10' y='155' fill='white' font-size='100' font-family='Verdana'>Loading</text></svg>");
+    background-color: darkslategrey;
     z-index: 9999 !important;
 }
 
-.iframeContainer {
+.loadingDemo {
+/*
+Source - https://stackoverflow.com/a
+Posted by Ciro Santilli OurBigBook.com, modified by community. See post 'Timeline' for change history
+Retrieved 2025-11-12, License - CC BY-SA 4.0
+*/
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='500px' width='500px'><text x='50' y='290' fill='white' font-size='100' font-family='Verdana'>Loading</text></svg>");
+    background-color: darkslategrey;
+    z-index: 9999 !important;
+}
+
+.iframeContainerLang {
   border-radius: 20px 20px 20px 20px;
   border: 1px solid black;
   position: relative;
@@ -226,7 +238,7 @@ Retrieved 2025-11-12, License - CC BY-SA 4.0
   overflow: hidden;
 }
 
-.iframeContent {
+.iframeContentLang {
   border: none;
   position: absolute;
   top: -95px;
@@ -234,3 +246,22 @@ Retrieved 2025-11-12, License - CC BY-SA 4.0
   height: 595px;
   width: 500px;
 }
+
+.iframeContainerJob {
+  border-radius: 20px 20px 20px 20px;
+  border: 1px solid black;
+  position: relative;
+  height: 500px;
+  width: 500px;
+  overflow: hidden;
+}
+
+.iframeContentJob {
+  border: none;
+  position: absolute;
+  top: -95px;
+  left: 0px;
+  height: 595px;
+  width: 500px;
+}
+
