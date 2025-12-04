@@ -13,9 +13,9 @@ const Demos = () => {
                 </div>
             </div>
             <div style={{ textAlign: "center" }}>
-                <div style={{paddingBottom: '10px', fontSize: '16pt'}}>Job Cover Letter Creator</div>
+                <div style={{paddingBottom: '10px', fontSize: '16pt'}}>Word Document Summariser</div>
                 <div className="iframeContainerJob loadingDemo">
-                    <iframe scrolling="yes" src="https://openai.baxterpearson.co.uk/JobCoverLetter" className="iframeContentJob"/>
+                    <iframe scrolling="no" src="https://openai.baxterpearson.co.uk/WordDocument" className="iframeContentJob"/>
                 </div>
             </div>
         </div>
