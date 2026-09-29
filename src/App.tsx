@@ -3,11 +3,11 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Services from './components/Services';
 import PublishedWork from './components/PublishedWork';
-import WebWidgets from './components/WebWidgets';
+//import WebWidgets from './components/WebWidgets';
 import Testimonials from './components/Testimonials';
 import Location from './components/Location';
 import Footer from './components/Footer';
-import Demos from './components/Demos';
+//import Demos from './components/Demos';
 
 function App() {
   return (
@@ -17,8 +17,8 @@ function App() {
       <About />
       <Services />
       <PublishedWork />
-      <WebWidgets />
-      <Demos />
+      {/* <WebWidgets />
+      <Demos /> */}
       <Testimonials />
       <Location />
       <Footer />
