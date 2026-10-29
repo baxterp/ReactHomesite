@@ -18,7 +18,7 @@ function App() {
       <Services />
       <PublishedWork />
       <WebWidgets />
-      {/* <Demos /> */}
+      <Demos />
       <Testimonials />
       <Location />
       <Footer />
